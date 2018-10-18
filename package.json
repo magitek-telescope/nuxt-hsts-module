@@ -1,0 +1,47 @@
+{
+  "name": "nuxt-hsts-module",
+  "version": "0.0.1",
+  "description": "Provide basic authentication to your Nuxt.js application",
+  "keywords": [
+    "vue",
+    "nuxt",
+    "nuxt.js",
+    "nuxt-module",
+    "security"
+  ],
+  "main": "lib/module.js",
+  "license": "MIT",
+  "repository": "https://github.com/potato4d/nuxt-hsts-module",
+  "scripts": {
+    "dev": "nuxt test/fixture",
+    "test": "jest",
+    "test:unit": "jest --testRegex \"/test/unit/(.+)\\.test\\.js$\"",
+    "test:system": "jest --testRegex \"/test/system/(.+)\\.test\\.js$\"",
+    "test:coverage": "yarn test --coverage",
+    "release": "standard-version && git push --follow-tags",
+    "format": "prettier './{lib,test}/**/*.js' --write"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "codecov": "^3.0.4",
+    "jest": "^23.4.1",
+    "jsdom": "^11.11.0",
+    "nuxt": "^2.0.0",
+    "prettier": "^1.14.3",
+    "puppeteer": "^1.6.1",
+    "standard-version": "^4.4.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "lib/**/*.{js,jsx}"
+    ]
+  },
+  "dependencies": {
+    "basic-auth": "^2.0.1"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
