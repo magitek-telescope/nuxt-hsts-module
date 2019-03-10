@@ -1,3 +1,5 @@
+**Project archived: I recommend using nuxt-helmet instead. I'm using it.**
+
 # Nuxt.js HTTP Strict Transport Security module
 
 [![codecov](https://codecov.io/gh/potato4d/nuxt-hsts-module/branch/master/graph/badge.svg)](https://codecov.io/gh/potato4d/nuxt-hsts-module) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)

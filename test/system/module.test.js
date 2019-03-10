@@ -37,6 +37,7 @@ describe('module E2E test', () => {
   })
 
   test('on Server', () => {
+    const response = await get('/')
     // TODO: write test
   })
 })

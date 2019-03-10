@@ -4,6 +4,8 @@ module.exports = {
   rootDir: resolve(__dirname, '../..'),
   srcDir: __dirname,
   modules: ['~/../../lib/module'],
-  hsts: true,
+  hsts: {
+    enabled: true
+  },
   dev: process.env.NODE_ENV !== 'test' && process.env.NODE_ENV === 'production'
 }
